@@ -1,0 +1,42 @@
+/*
+Theme Name: Lavisa Spell Theme
+Theme URI:
+Description: Personal ordered theme
+Author: Povilas Geraltauskas
+Author URI: pg-development.net
+Version: 1.0
+Tags: responsive, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This is an example theme to go along with the Treehouse blog post on <a href="http://teamtreehouse.com/how-to-build-a-responsive-wordpress-site-with-twitter-bootstrap">How to Build a Simple Responsive WordPress Site Using Twitter Bootstrap</a>.
+*/
+
+@import url('bootstrap/css/bootstrap.css');
+@import url('bootstrap/css/bootstrap-responsive.css');
+
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.page-container{
+	width: 100%;
+	background: #222020;
+	color: #ffffff;
+}
+a{
+	color: #ffffff;
+	font-size: 10pt;
+}
+.top-list li {
+	display: inline;
+	padding: 5px;
+}
+.border-sides{
+	border-right: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+}
+.margin-t-15{
+	margin-top: 15px;
+}
