@@ -5,12 +5,14 @@
 
     <!-- Le styles -->
     <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Terminal+Dosis" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+      </script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <![endif]-->
 
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
@@ -32,32 +34,37 @@
                       </ul>
                   </div>
               </div>
-              <div class="row">
-                  <div class="col-sm-4"></div>
-                  <div class="col-sm-4"><img src="<?php echo get_option('logo'); ?>"> </div>
-                  <div class="col-sm-4"></div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4 text-center padding-20">
+                  <?php if ( function_exists( 'the_custom_logo' ) ) {
+                      the_custom_logo();
+                  } ?>
               </div>
+              <div class="col-sm-4"></div>
           </div>
       </div>
 
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
-        <div class="nav-collapse collapse">
-          <ul class="nav">
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
 
-              <?php wp_list_pages(array('title_li' => '', 'exclude' => 4)); ?>
-
-          </ul>
-        </div><!--/.nav-collapse -->
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav navbar-center">
+                      <?php wp_nav_menu(array(  'container' => '','items_wrap' => '%3$s', 'title_li' => '', 'exclude' => 4)); ?>
+                  </ul>
+              </div>
+      </nav>
       </div>
-    </div>
-  </div>
-
   <div class="container">

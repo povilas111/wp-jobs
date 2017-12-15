@@ -1,10 +1,13 @@
      <hr>
 
-      <footer>
-        <p>© Company 2012</p>
+     </div> <!-- /container -->
+      <footer class="page-container">
+          <div class="container text-center">
+              <p class="footer-p"><?php echo get_option('footer_text'); ?></p>
+          </div>
       </footer>
 
-    </div> <!-- /container -->
+
 
     <?php wp_footer(); ?>
 

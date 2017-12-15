@@ -14,7 +14,7 @@ This is an example theme to go along with the Treehouse blog post on <a href="ht
 */
 
 @import url('bootstrap/css/bootstrap.css');
-@import url('bootstrap/css/bootstrap-responsive.css');
+@import url('bootstrap/css/bootstrap-theme.css');
 
 body {
 	padding-top: 60px;
@@ -25,9 +25,17 @@ body {
 	background: #222020;
 	color: #ffffff;
 }
-a{
+.padding-20{
+	padding: 20px;
+}
+.top-bar a{
 	color: #ffffff;
-	font-size: 10pt;
+	font-family: "Terminal Dosis";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
 }
 .top-list li {
 	display: inline;
@@ -39,4 +47,237 @@ a{
 }
 .margin-t-15{
 	margin-top: 15px;
+}
+.footer-p{
+	font-family: 'Roboto Condensed';
+	font-size: 15px;
+	font-style: italic;
+	line-height: 60px;
+}
+.navbar-nav {
+	width: 100%;
+	text-align: center;
+}
+.navbar-nav > li {
+	float: none;
+	display: inline-block;
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+.navbar {
+	background: transparent;
+	border: none;
+	-webkit-box-shadow: 2px 31px 5px 0px rgba(224,224,224,1);
+	-moz-box-shadow: 2px 31px 5px 0px rgba(224,224,224,1);
+	box-shadow: 2px 0px 5px 0px rgba(224,224,224,1);
+	background-color: #e1e1e159;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+	color: #767676;
+}
+.product-heading:before {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 55px;
+	margin: 25px 0px;
+	background: url(http://localhost/wp-content/uploads/2017/12/decoration.png) no-repeat center;
+	background-size: contain;
+}
+.product-heading:after {
+	content: "";
+	display: block;
+	width: 20%;
+	height: 3px;
+	margin: 40px auto;
+	background: #f8b1b9;
+	border-radius: 5px;
+}
+/*.woocommerce ul.products li.product a img{*/
+	/*max-width: 230px;*/
+/*}*/
+#cat-name {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #e10018;
+
+}
+.woocommerce-loop-product__title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	font-size: 20px!important;
+	color: #303030;
+}
+/*.underline {*/
+	/*margin: 0;*/
+/*}*/
+.underline:after {
+	content: "";
+	display: block;
+	width: 50%;
+	height: 3px;
+	margin: 20px 0px;
+	background: #f8b1b9;
+	border-radius: 5px;
+}
+pre {
+	background: none;
+	border: none;
+}
+
+.admin_shortcode pre{
+	color:white;
+}
+.testimonial-client .testimonial-image{
+	order:2;
+}
+.testimonial-company {
+	order: 3;
+}
+.testimonial-client{
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.testimonial  .testimonial-inner p, .testimonial  .testimonial-inner .testimonial-client .testimonial-name {
+	color: #fff;
+	order: 1;
+}
+.testimonial  .testimonial-inner {
+	display: flex!important;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+.strong-view.controls-style-buttons .wpmslider-wrapper .wpmslider-next:before{
+	content:"\f105"!important;
+	font-size: 3em;
+}
+.strong-view.controls-style-buttons .wpmslider-wrapper .wpmslider-prev:before{
+	content: "\f104"!important;
+	font-size: 3em;
+}
+.strong-view.modern .testimonial-content:after{
+	content: none!important;
+}
+
+
+/*product add to cart button*/
+
+span.add_to_cart_icon {
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
+	background: transparent;
+	display: flex;
+	align-items: baseline;
+	float: left;
+	margin: 0!important;
+	font-size: 15px;
+	font-weight: 400;
+	padding: 0!important;
+}
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover span.add_to_cart_icon:before{
+	top: 12px;
+}
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart span.add_to_cart_icon:before{
+	content: "";
+	background-image: url(images/add.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 12px;
+	top: 6px;
+	width: 9px;
+	height: 14px;
+	transition: top .2s ease-in;
+
+}
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart span.add_to_cart_icon:after{
+	content: "";
+	background-image: url(images/add_to_cart.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 33px;
+	height: 27px;
+}
+/*a.button.add_to_cart_button{*/
+	/*text-indent: -9999px;*/
+/*}*/
+
+ul.products li.product-type-simple span.price span.woocommerce-Price-amount.amount {
+	font-size: 16px;
+}
+ul.products li.product-type-simple span.price {
+	float: right;
+	margin-top: 32px;
+	color: #333!important;
+}
+.event-wrapper {
+	display: inline-flex;
+	list-style: none;
+}
+.event-wrapper li{
+	padding: 35px;
+}
+.event-wrapper .listing-item .title {
+	display: block;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	color: #313131;
+	padding: 20px 0px;
+	border-bottom: 1px solid #e3e3e3;
+}
+.event-wrapper .listing-item img {
+	width: 100%;
+	height: auto;
+	border-bottom: 3px solid #e10018;
+}
+.event-wrapper .listing-item .date{
+	line-height: 4;
+}
+.event-wrapper .listing-item .content {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 25px;
+}
+.blog-wrapper .listing-item{
+	display: inline-flex;
+}
+.blog-wrapper .listing-item .title{
+	align-self: center;
+}
+.title-container {
+	display: flex;
+	flex-flow: column wrap;
+	align-self: center;
+	padding: 0px 20px;
+}
+.strong-view.modern .testimonial-content:before{
+	content: ""!important;
+}
+.blog-wrapper .listing-item .image img{
+	max-width: 165px;
+	max-height: 135px;
+}
+.blog-wrapper .title{
+	font-family: Montserrat;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+}
+.blog-container .listing-item {
+	padding: 0px;
 }
